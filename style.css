@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Container Styles */
+  .container {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #f3f3f3;
+  }
+  
+  /* Input Fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: left;
+    color: #dcdcdc;
+    font-weight: 500;
+  }
+  
+  /* Button Styles */
+  button {
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 100, 150, 0.3);
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #da1b60, #ff8a00);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 100, 150, 0.5);
+  }
+  
+  /* Container Hover Effect */
+  .container:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 20px 25px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    input[type="text"] {
+      font-size: 1rem;
+    }
+  }
+  
